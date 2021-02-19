@@ -30,6 +30,19 @@ paths:
           description: "CPU info, or add more text"
           schema: 
             $ref: "#/definitions/CPU"
+  /os:
+    get:
+      tags:
+        - CPU
+      operationId: os_pack.cpu_2020.get_os
+      description: "Returns os information of the hosting server"
+      produces: 
+        - "application/json"
+      responses: 
+        "200":
+          description: "CPU info, or add more text"
+          schema: 
+            $ref: "#/definitions/CPU"
 definitions:
   CPU:
     type: "object"
